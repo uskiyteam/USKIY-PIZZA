@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя Пиццерия</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Моя Пиццерия</div>
+    <nav>
+      <ul>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#delivery">Доставка</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#cart">Корзина</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Пицца с доставкой за 30 минут</h1>
+    <button onclick="addToCart('Пепперони', 49)">Заказать пиццу Пепперони</button>
+  </section>
+
+  <section id="menu">
+    <h2>Меню</h2>
+    <div class="pizza-grid">
+      <div class="pizza-item">
+        <img src="images/pepperoni.jpg" alt="Пепперони">
+        <h3>Пепперони</h3>
+        <p>От 49 000 сум</p>
+        <button onclick="addToCart('Пепперони', 49)">В корзину</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Корзина</h2>
+    <ul id="cart-list">
+      <!-- Корзина будет отображаться здесь -->
+    </ul>
+    <p>Общая сумма: <span id="total">0</span> сум</p>
+  </section>
+
+  <section id="delivery">
+    <h2>Доставка</h2>
+    <p>Мы доставляем по Ташкенту и области. Заказ от 80 000 сум — бесплатно.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p>Позвони нам: +998 90 123-45-67</p>
+    <p>Instagram: @mypizza</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Моя Пиццерия</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
